@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    int lastdigit=n%10;
+	    if(lastdigit%3==0){
+	        System.out.println("The last digit is div by 3");
+	    }
+	    else{
+	        System.out.println("The last digit is not div by 3");
+	    }
+		
+	}
+}
