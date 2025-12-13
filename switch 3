@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class DayCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int day = sc.nextInt();
+
+        switch (day) {
+            case 1: // Monday
+            case 2: // Tuesday
+            case 3: // Wednesday
+            case 4: // Thursday
+            case 5: // Friday
+                System.out.println("It is a Weekday.");
+                break;
+
+            case 6: // Saturday
+            case 7: // Sunday
+                System.out.println("It is a Weekend.");
+                break;
+
+            default:
+                System.out.println("Invalid day number.");
+        }
+    }
+}
