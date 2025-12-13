@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class BillDiscountCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the bill amount: ₹");
+        double billAmount = sc.nextDouble();
+
+        double discount = 0.0;
+        if (billAmount < 1000) {
+            discount = billAmount * 0.05; 
+        } else if (billAmount < 5000) {
+            discount = billAmount * 0.10;
+        } else {
+        }
+
+        double finalAmount = billAmount - discount;
+
+        System.out.println("Discount applied: ₹" + discount);
+        System.out.println("Amount to pay after discount: ₹" + finalAmount);
+
+        sc.close();
+    }
+}
